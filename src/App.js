@@ -5,6 +5,7 @@ import {
   mainBody,
   about,
   repos,
+  projectsData,
   leadership,
   skills,
   getInTouch,
@@ -47,12 +48,10 @@ const Home = React.forwardRef((props, ref) => {
           <Experience experiences={experiences}/>
         )
       }
-      {repos.show && (
+      {projectsData.show && (
         <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
+          heading={projectsData.heading}
+          projectsData={projectsData.data}
         />
       )}
       {leadership.show && (
@@ -68,6 +67,8 @@ const Home = React.forwardRef((props, ref) => {
           heading={skills.heading}
           hardSkills={skills.hardSkills}
           softSkills={skills.softSkills}
+          mlSkills={skills.mlSkills}
+          hardwareSkills={skills.hardwareSkills}
         />
       )}
       
