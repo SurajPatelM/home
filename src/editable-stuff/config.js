@@ -12,10 +12,6 @@ const mainBody = {
   message: "Building intelligent solutions to transform the world through technology.",
   icons: [
     {
-      image: "fa-github",
-      url: "https://github.com/SurajPatelM",
-    },
-    {
       image: "fa-linkedin",
       url: "https://www.linkedin.com/in/suraj-patel-m-9460b41b2",
     },
