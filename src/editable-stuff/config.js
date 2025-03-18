@@ -39,7 +39,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/SurajPatelMutheGowda.jpg"),
   imageSize: 375,
   message:
     "My name is Suraj Patel. I’m a Master's student in Electrical and Computer Engineering at Northeastern University, specializing in Machine Learning, Computer Vision, and Algorithms. Previously, I worked as a Senior Software Development Engineer at Samsung R&D, where I built AI-driven security solutions and optimized system performance. I'm passionate about leveraging technology to solve complex problems, whether in software engineering, AI, or embedded systems. In my free time, I enjoy working on innovative projects, exploring new advancements in AI, and contributing to the tech community.",
@@ -109,12 +109,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/SurajPatelMutheGowda.jpg"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/SurajPatelMutheGowda.jpg"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
