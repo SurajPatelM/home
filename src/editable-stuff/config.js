@@ -51,29 +51,29 @@ const projectsData = {
     data: [{
       name: "🚀 FinFluent – AI-Powered Financial Advisor",
       description: [
-        "🔍 Built an LSTM-based AI model for **stock market prediction**.",
-        "💰 Improved budget forecasting by **80%** using SARIMA & LSTM.",
+        "🔍 Built an LSTM-based AI model for stock market prediction.",
+        "💰 Improved budget forecasting by 80% using SARIMA & LSTM.",
       ],
     },
     {
       name: "⚡ AI-Optimized Cache Management",
       description: [
-        "📊 Designed **smart cache strategies** to reduce processor stalls.",
-        "🤖 Applied **Reinforcement Learning** to optimize memory usage.",
+        "📊 Designed smart cache strategies to reduce processor stalls.",
+        "🤖 Applied Reinforcement Learning to optimize memory usage.",
       ],
     },
     {
       name: "🏗️ Autonomous Emergency Elevator",
       description: [
-        "🚑 Developed a **wall-climbing elevator** for emergency rescues.",
-        "📡 Integrated **wireless control** & thermal sensors for safety.",
+        "🚑 Developed a wall-climbing elevator for emergency rescues.",
+        "📡 Integrated wireless control & thermal sensors for safety.",
       ],
     },
     {
       name: "⏳ Countdown Timer with Buzzer",
       description: [
-        "🔧 Designed a **custom PCB-based timer** with pause/reset functions.",
-        "🔊 Integrated an **audible alert system** for automation & industry.",
+        "🔧 Designed a custom PCB-based timer with pause/reset functions.",
+        "🔊 Integrated an audible alert system for automation & industry.",
       ],
     },
   ],
@@ -178,9 +178,9 @@ const experiences = {
       companylogo: require("../assets/img/SamsungLogo.jpg"),
       date: "Mar 2024 – Aug 2024",
       description: [
-        "**Intelligent Threat Detection** – Designed and implemented a multi-modal AI system capable of detecting 10,000+ security threats daily, strengthening device protection by 25% through advanced anomaly detection.",
-        "**Vishing Protection at Scale** – Engineered an On-Device AI-powered fraud detection system, analyzing 100,000+ calls daily in real time, reducing phishing and scam risks by 40%.",
-        "**Deepfake Defense** – Developed a high-precision deepfake detection model (92% accuracy) using EfficientNet and BERT, mitigating identity theft and misinformation by 30%.",
+        "Intelligent Threat Detection – Designed and implemented a multi-modal AI system capable of detecting 10,000+ security threats daily, strengthening device protection by 25% through advanced anomaly detection.",
+        "Vishing Protection at Scale – Engineered an On-Device AI-powered fraud detection system, analyzing 100,000+ calls daily in real time, reducing phishing and scam risks by 40%.",
+        "Deepfake Defense – Developed a high-precision deepfake detection model (92% accuracy) using EfficientNet and BERT, mitigating identity theft and misinformation by 30%.",
       ],
       logoStyle: { width: "100px", height: "auto", objectFit: "contain" },
     },
@@ -190,10 +190,10 @@ const experiences = {
       companylogo: require("../assets/img/SamsungLogo.jpg"),
       date: "July 2022 - Mar 2024",
       description: [
-        "**Enterprise-Grade Threat Protection** – Developed AI-powered security solutions for Knox AI B2B, safeguarding enterprise users against evolving cyber threats with intelligent, adaptive protection protocols.",
-        "**Enhanced AI Security Models** – Optimized AI-based threat detection, boosting accuracy by 20% through real-world data fine-tuning, ensuring proactive vulnerability mitigation in enterprise devices.",
-        "**Chipset-Level Security** – Engineered bootloader security enhancements for Exynos and Qualcomm chipsets, fortifying device startup processes and preventing unauthorized access to sensitive user data.",
-        "**Automated Security Operations** – Integrated DevOps-driven automation for data generation and analytics, accelerating security update rollouts by 35%, enabling real-time protection for 500K+ users, and enhancing system efficiency in threat detection.",
+        "Enterprise-Grade Threat Protection – Developed AI-powered security solutions for Knox AI B2B, safeguarding enterprise users against evolving cyber threats with intelligent, adaptive protection protocols.",
+        "Enhanced AI Security Models – Optimized AI-based threat detection, boosting accuracy by 20% through real-world data fine-tuning, ensuring proactive vulnerability mitigation in enterprise devices.",
+        "Chipset-Level Security – Engineered bootloader security enhancements for Exynos and Qualcomm chipsets, fortifying device startup processes and preventing unauthorized access to sensitive user data.",
+        "Automated Security Operations – Integrated DevOps-driven automation for data generation and analytics, accelerating security update rollouts by 35%, enabling real-time protection for 500K+ users, and enhancing system efficiency in threat detection.",
       ],
       logoStyle: { width: "100px", height: "auto", objectFit: "contain" },
     },
