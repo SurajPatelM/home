@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/home/static/css/main.b1a3edc1.css",
-    "main.js": "/home/static/js/main.a2520933.js",
+    "main.js": "/home/static/js/main.087dae6a.js",
     "static/js/453.9b1a9f3d.chunk.js": "/home/static/js/453.9b1a9f3d.chunk.js",
     "static/media/SurajPatelMutheGowda.jpg": "/home/static/media/SurajPatelMutheGowda.2eae279cef593f3c5d66.jpg",
     "static/media/SamsungLogo.jpg": "/home/static/media/SamsungLogo.f80819ecee5cecf3623a.jpg",
-    "static/media/SurajPatelMutheGowdResume.pdf": "/home/static/media/SurajPatelMutheGowdResume.482755d58844743dab9d.pdf",
+    "static/media/SurajPatelMutheGowdResume.pdf": "/home/static/media/SurajPatelMutheGowdResume.39cec57d81747605762f.pdf",
     "index.html": "/home/index.html",
     "main.b1a3edc1.css.map": "/home/static/css/main.b1a3edc1.css.map",
-    "main.a2520933.js.map": "/home/static/js/main.a2520933.js.map",
+    "main.087dae6a.js.map": "/home/static/js/main.087dae6a.js.map",
     "453.9b1a9f3d.chunk.js.map": "/home/static/js/453.9b1a9f3d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1a3edc1.css",
-    "static/js/main.a2520933.js"
+    "static/js/main.087dae6a.js"
   ]
 }
