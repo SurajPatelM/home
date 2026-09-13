@@ -1,34 +1,16 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
-
-const Project = ({ heading,projectsData }) => {
-  return (
-    <Container id="projects" className="mt-5">
-      <h2 className="text-center mb-4">{heading}</h2>
-      <Row className="d-flex justify-content-center">
-        {projectsData.length ? (
-          projectsData.map((project, index) => (
-            <Card key={index} className="m-2 p-3" style={{ width: "18rem" }}>
-              <Card.Body>
-                <Card.Title>{project.name}</Card.Title>
-                <Card.Text as="div">
-                  <ul>
-                    {project.description.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          ))
-        ) : (
-          <p className="text-center">No projects available</p>
-        )}
-      </Row>
-    </Container>
-  );
-};
-
+const Project = ({heading,projectsData}) => (
+  <section id="projects" className="portfolio-section project-section">
+    <div className="container"><div className="section-heading"><div><p className="eyebrow">Things I’ve built</p><h2>{heading}</h2></div><a className="text-link" href="https://github.com/SurajPatelM?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories ↗</a></div>
+    <div className="project-grid">{projectsData.map((project,index) => (
+      <article className="project-card" key={project.name}>
+        <div className="project-meta"><span>{project.category}</span><span aria-hidden="true">{String(index+1).padStart(2,'0')}</span></div>
+        <h3>{project.name}</h3><p>{project.summary}</p>
+        <ul>{project.description.map(point => <li key={point}>{point}</li>)}</ul>
+        <div className="technology-list">{project.technologies.map(tech => <span key={tech}>{tech}</span>)}</div>
+        <a className="text-link project-link" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.name} on GitHub`}>View project ↗</a>
+      </article>
+    ))}</div></div>
+  </section>
+);
 export default Project;

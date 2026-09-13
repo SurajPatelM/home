@@ -1,208 +1,252 @@
-// Navigation Bar SECTION
-const navBar = {
-  show: true,
-};
-
-// Main Body SECTION
+// Portfolio content. Dates and experience follow the September 2026 resume.
+const navBar = { show: true };
 const mainBody = {
-  gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Suraj Patel",
-  middleName: "",
-  lastName: "Muthe Gowda",
-  message: "Building intelligent solutions to transform the world through technology.",
+  firstName: "Suraj Patel", middleName: "", lastName: "Muthe Gowda",
+  message: "I build AI systems that connect research with real-world use.",
   icons: [
-    {
-      image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/suraj-patel-m-9460b41b2",
-    },
-  ],
-};
-
-// ABOUT SECTION
-// If you want the About Section to show a profile picture you can fill the profilePictureLink either with:
-//a) your Instagram username
-//      i.e:profilePictureLink:"johnDoe123",
-//b) a link to an hosted image
-//      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
-//c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/hashirshoaeb.png"),
-//d) If you do not want any picture to be displayed, just leave it empty :)
-//      i.e: profilePictureLink: "",
-// For Resume either provide link to your resume or import from "editable-stuff" directory
-//     i.e resume: require("../editable-stuff/resume.pdf"),
-//         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-
-const about = {
-  show: true,
-  heading: "About Me",
-  imageLink: require("../editable-stuff/SurajPatelMutheGowda.jpg"),
-  imageSize: 375,
-  message:
-    "My name is Suraj Patel. I’m a Master's student in Electrical and Computer Engineering at Northeastern University, specializing in Machine Learning, Computer Vision, and Algorithms. Previously, I worked as a Senior Software Development Engineer at Samsung R&D, where I built AI-driven security solutions and optimized system performance. I'm passionate about leveraging technology to solve complex problems, whether in software engineering, AI, or embedded systems. In my free time, I enjoy working on innovative projects, exploring new advancements in AI, and contributing to the tech community.",
-  resume: require("../editable-stuff/SurajPatelMutheGowdResume.pdf"),
-};
-
-// PROJECTS SECTION
-// Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
-//      i.e: reposLength: 0,
-// If you want to display specfic projects, add the repository names,
-//      i.e ["repository-1", "repo-2"]
-const projectsData = {
-    data: [{
-      name: "🚀 FinFluent – AI-Powered Financial Advisor",
-      description: [
-        "🔍 Built an LSTM-based AI model for stock market prediction.",
-        "💰 Improved budget forecasting by 80% using SARIMA & LSTM.",
-      ],
-    },
-    {
-      name: "⚡ AI-Optimized Cache Management",
-      description: [
-        "📊 Designed smart cache strategies to reduce processor stalls.",
-        "🤖 Applied Reinforcement Learning to optimize memory usage.",
-      ],
-    },
-    {
-      name: "🏗️ Autonomous Emergency Elevator",
-      description: [
-        "🚑 Developed a wall-climbing elevator for emergency rescues.",
-        "📡 Integrated wireless control & thermal sensors for safety.",
-      ],
-    },
-    {
-      name: "⏳ Countdown Timer with Buzzer",
-      description: [
-        "🔧 Designed a custom PCB-based timer with pause/reset functions.",
-        "🔊 Integrated an audible alert system for automation & industry.",
-      ],
-    },
-  ],
-  show: true,
-  heading: "Recent Projects",
-};
-const repos = {
-  show: false,
-  heading: "Recent Projects",
-  gitHubUsername: "SurajPatelM", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
-};
-
-// Leadership SECTION
-const leadership = {
-  show: false,
-  heading: "Leadership",
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
-  images: [
-    { 
-      img: require("../editable-stuff/SurajPatelMutheGowda.jpg"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-    { 
-      img: require("../editable-stuff/SurajPatelMutheGowda.jpg"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
-    },
-  ],
-  imageSize: {
-    width:"615",
-    height:"450"
-  }
-};
-
-// SKILLS SECTION
-const skills = {
-  show: true,
-  heading: "Skills",
-  hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "Data Structures", value: 90 },
-    { name: "C/C++", value: 85 },
-    { name: "Java", value: 85 },
-    // { name: "SQL", value: 50 },
-    { name: "CUDA", value: 75 },
-    { name: "Embedded C", value: 65 },
-    { name: "GoLang", value: 75 },  ],
-  mlSkills: [
-    { name: "Deep Learning", value: 90 },
-    { name: "Computer Vision", value: 85 },
-    { name: "Large Language Models", value: 85 },
-    { name: "Neural Networks", value: 85 },
-    { name: "TensorFlow", value: 85 },
-    { name: "Pytorch", value: 85 },
-    { name: "Hugging Face", value: 85 },
-    { name: "Open CV", value: 85 },
-    { name: "Model Quantisation", value: 85 },
-  ],
-  hardwareSkills: [
-    { name: "Computer Architecture", value: 90 },
-    { name: "Cache Optimization", value: 85 },
-    { name: "Fault-Tolearnt Systems", value: 75 },
-    { name: "Robotics, Sensing and Naviagtion", value: 65 },
-    { name: "Digital Electronics", value: 80 },
-    { name: "FPGA", value: 80 },
-    { name: "VHDL", value: 80 },
-    { name: "PCB Design", value: 80 },
-    // { name: "Embedded C", value: 75 },
-  ],
-  softSkills: [
-    { name: "Goal-Oriented", value: 90 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 90 },
-    { name: "Adaptability", value: 90 },
-    { name: "Problem Solving", value: 90 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 90 },
-    { name: "Creativity", value: 90 },
-  ],
-};
-
-// GET IN TOUCH SECTION
-const getInTouch = {
-  show: true,
-  heading: "Get In Touch",
-  message:
-    "I'm currently seeking internships or co-op opportunities in Artificial Intelligence, Machine Learning or Computer Engineering! If you know of any available positions, have any questions, or just want to connect, feel free to reach out to me at muthegowda.s@northeastern.edu. I’d love to chat!",
-  // email: "muthegowda.s@northeastern.edu",
-};
-
-const experiences = {
-  show: true,
-  heading: "Experiences",
-  data: [
-    {
-    role: "Senior Machine Learning Engineer",
-      company: "Samsung",
-      companylogo: require("../assets/img/SamsungLogo.jpg"),
-      date: "Mar 2024 – Aug 2024",
-      description: [
-        "Intelligent Threat Detection – Designed and implemented a multi-modal AI system capable of detecting 10,000+ security threats daily, strengthening device protection by 25% through advanced anomaly detection.",
-        "Vishing Protection at Scale – Engineered an On-Device AI-powered fraud detection system, analyzing 100,000+ calls daily in real time, reducing phishing and scam risks by 40%.",
-        "Deepfake Defense – Developed a high-precision deepfake detection model (92% accuracy) using EfficientNet and BERT, mitigating identity theft and misinformation by 30%.",
-      ],
-      logoStyle: { width: "100px", height: "auto", objectFit: "contain" },
-    },
-    {
-      role: "Machine Learning Engineer",
-      company: "Samsung",
-      companylogo: require("../assets/img/SamsungLogo.jpg"),
-      date: "July 2022 - Mar 2024",
-      description: [
-        "Enterprise-Grade Threat Protection – Developed AI-powered security solutions for Knox AI B2B, safeguarding enterprise users against evolving cyber threats with intelligent, adaptive protection protocols.",
-        "Enhanced AI Security Models – Optimized AI-based threat detection, boosting accuracy by 20% through real-world data fine-tuning, ensuring proactive vulnerability mitigation in enterprise devices.",
-        "Chipset-Level Security – Engineered bootloader security enhancements for Exynos and Qualcomm chipsets, fortifying device startup processes and preventing unauthorized access to sensitive user data.",
-        "Automated Security Operations – Integrated DevOps-driven automation for data generation and analytics, accelerating security update rollouts by 35%, enabling real-time protection for 500K+ users, and enhancing system efficiency in threat detection.",
-      ],
-      logoStyle: { width: "100px", height: "auto", objectFit: "contain" },
-    },
+    { image: "fa-github", label: "GitHub", url: "https://github.com/SurajPatelM" },
+    { image: "fa-linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/suraj-patel-m-9460b41b2" }
   ]
-}
-
-// Blog SECTION
-// const blog = {
-//   show: false,
-// };
-
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, projectsData };
+};
+const about = {
+  show: true, heading: "About",
+  imageLink: require("./SurajPatelMutheGowda.jpg"), imageSize: 280,
+  message: "I’m a machine learning engineer and a master’s student in Computer Engineering at Northeastern University, graduating in December 2026. My work spans AI agent evaluation at Amazon, wearable health research at Apnimed, and on-device multimodal security at Samsung. I’m interested in building useful AI systems with careful evaluation, efficient inference, and clear human interaction.",
+  resume: require("./SurajPatelMutheGowda-Resume.pdf")
+};
+const projectsData = {
+  "show": true,
+  "heading": "Selected projects",
+  "data": [
+    {
+      "name": "FinFluent",
+      "category": "Multi-agent AI",
+      "summary": "A personal finance assistant that brings budgeting, anomaly detection, stock sentiment, and portfolio analysis into one conversation.",
+      "description": [
+        "Co-developed a LLaMA 3.1 system with four specialist agents, SARIMA forecasting, and Isolation Forest anomaly detection.",
+        "Contributed anomaly detection and analysis, prompt tuning, Fernet encryption, and synthetic financial data generation."
+      ],
+      "technologies": [
+        "LLaMA 3.1",
+        "Python",
+        "scikit-learn",
+        "Streamlit"
+      ],
+      "url": "https://github.com/SurajPatelM/FinFluent"
+    },
+    {
+      "name": "VideoCommentary AI",
+      "category": "Vision and language",
+      "summary": "Context-aware natural-language commentary generated from video frames.",
+      "description": [
+        "Combined a BLIP-2 vision encoder with a custom Transformer decoder and temporal frame aggregation.",
+        "Developed a training pipeline over annotated video-text pairs with mixed-precision computation on Apple Silicon."
+      ],
+      "technologies": [
+        "PyTorch",
+        "BLIP-2",
+        "Transformers"
+      ],
+      "url": "https://github.com/SurajPatelM/video-commentary-ai"
+    },
+    {
+      "name": "Iikshana",
+      "category": "Accessible AI",
+      "summary": "A research prototype for real-time courtroom language accessibility with human oversight.",
+      "description": [
+        "Integrated speech recognition, translation, and speech output through a FastAPI and WebSocket streaming backend.",
+        "Included confidence handling for human review, with a target of approximately two seconds end-to-end latency."
+      ],
+      "technologies": [
+        "FastAPI",
+        "WebSockets",
+        "React",
+        "MLflow"
+      ],
+      "url": "https://github.com/SurajPatelM/iikshana-courtroom-accessibility"
+    },
+    {
+      "name": "VisScore",
+      "category": "Computer vision",
+      "summary": "A visualization quality classifier that evaluates charts using CNNs and vision-language models.",
+      "description": [
+        "Supports synthetic chart generation, CNN training, Grad-CAM explanations, and a combined CNN and VLM verdict.",
+        "Provides Streamlit and CLI workflows for chart scoring and generating charts from CSV data."
+      ],
+      "technologies": [
+        "PyTorch",
+        "CNNs",
+        "VLMs",
+        "Streamlit"
+      ],
+      "url": "https://github.com/SurajPatelM/VisScore"
+    },
+    {
+      "name": "Patient Voice AI",
+      "category": "Conversational AI",
+      "summary": "A patient assistant prototype with connected chat and phone workflows.",
+      "description": [
+        "Supports appointment scheduling, specialist matching, and simulated prescription refill status through Claude tool calling.",
+        "Connects voice sessions through Vapi, with email confirmations and opt-in SMS notifications."
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Claude",
+        "Vapi"
+      ],
+      "url": "https://github.com/SurajPatelM/kyron_medical_ai"
+    },
+    {
+      "name": "Emotion Voice AI",
+      "category": "Audio machine learning",
+      "summary": "Speech emotion recognition across neutral, happy, angry, and sad classes.",
+      "description": [
+        "Preprocesses RAVDESS and CREMA-D audio and extracts MFCC and spectrogram features.",
+        "Includes Random Forest, SVM, and CNN training and inference workflows."
+      ],
+      "technologies": [
+        "Python",
+        "librosa",
+        "scikit-learn",
+        "CNNs"
+      ],
+      "url": "https://github.com/SurajPatelM/emotion-voice-ai"
+    }
+  ]
+};
+const experiences = {
+  "show": true,
+  "heading": "Experience",
+  "data": [
+    {
+      "company": "Amazon",
+      "role": "Software Development Engineer (AI) Intern",
+      "date": "Jun 2026 - Aug 2026",
+      "location": "Seattle, WA",
+      "description": [
+        "Built an AWS service to analyze and optimize system prompts of more than 15,000 tokens across production AI agents.",
+        "Developed a statistical framework to measure prompt-section impact across seven quality dimensions.",
+        "Designed held-out validation that enabled up to 12% fewer prompt tokens with no significant response quality loss."
+      ]
+    },
+    {
+      "company": "Apnimed",
+      "role": "Machine Learning Research Co-op",
+      "date": "Jul 2025 - Dec 2025",
+      "location": "Cambridge, MA",
+      "description": [
+        "Built a CNN-BiLSTM pipeline using more than 200,000 labeled wearable samples, improving four-class sleep-stage agreement from 0.60 to 0.80 Cohen’s kappa.",
+        "Engineered preprocessing, quality filtering, and balanced sampling pipelines, achieving 94.52% sensitivity in sleep/wake classification.",
+        "Added per-class evaluation, distribution-shift detection, and MLflow tracking."
+      ]
+    },
+    {
+      "company": "Samsung Research and Development Institute",
+      "role": "Senior Machine Learning Engineer",
+      "date": "Jan 2022 - Aug 2024",
+      "location": "Bengaluru, India",
+      "description": [
+        "Developed multimodal vishing detection using call transcripts, OCR text, and sequential features, achieving 94.44% accuracy.",
+        "Optimized inference on Samsung S24 to 250 ms with 16-bit post-training quantization, reducing model size by 40% and runtime memory by 38%.",
+        "Developed a BERT-based threat classification pipeline with fine-tuning, evaluation, and production monitoring."
+      ]
+    }
+  ]
+};
+const skills = {
+  "show": true,
+  "heading": "Skills",
+  "groups": [
+    {
+      "name": "Languages",
+      "items": [
+        "Python",
+        "C++",
+        "Java",
+        "SQL",
+        "JavaScript / TypeScript",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Machine learning",
+      "items": [
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "Computer vision",
+        "NLP",
+        "Multimodal learning"
+      ]
+    },
+    {
+      "name": "Generative AI",
+      "items": [
+        "LLMs",
+        "AI agents",
+        "RAG",
+        "LangChain",
+        "Hugging Face",
+        "Agentic evaluation"
+      ]
+    },
+    {
+      "name": "Systems and infrastructure",
+      "items": [
+        "FastAPI",
+        "MLflow",
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "ONNX",
+        "Quantization"
+      ]
+    }
+  ]
+};
+const education = [
+  {
+    "name": "Northeastern University",
+    "qualification": "Master’s in Computer Engineering",
+    "detail": "Machine Learning and Computer Vision",
+    "date": "Expected Dec 2026",
+    "location": "Boston, MA",
+    "gpa": "4.0 / 4.0"
+  },
+  {
+    "name": "PES University",
+    "qualification": "Bachelor’s in Electrical and Electronics Engineering",
+    "detail": "Embedded Systems",
+    "date": "May 2022",
+    "location": "Bengaluru, India",
+    "gpa": "3.8 / 4.0"
+  }
+];
+const publications = [
+  {
+    "title": "Deep Learning Optimization of Sleep Stage Classification",
+    "venue": "ATS 2026",
+    "date": "May 2026",
+    "url": "https://ats2026.d365.events/education/abstracts/abstracts/396c9803-32b6-4a2f-b760-44625bb95200"
+  },
+  {
+    "title": "AI-Driven Architectures for Real-Time Decision-Making in Autonomous Vehicles",
+    "venue": "IEEE ICAD 2025",
+    "date": "Jun 2025",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11114074"
+  },
+  {
+    "title": "Multimodal Strategy to Defend Mobile Devices Against Vishing Attacks",
+    "venue": "ACM MobiCom 2024",
+    "date": "Dec 2024",
+    "url": "https://doi.org/10.1145/3636534.3690683"
+  }
+];
+const getInTouch = {
+  show: true, heading: "Let’s connect",
+  message: "For conversations about machine learning, AI systems, research, or collaboration, get in touch.",
+  email: "muthegowda.s@northeastern.edu"
+};
+export { navBar, mainBody, about, projectsData, experiences, skills, education, publications, getInTouch };

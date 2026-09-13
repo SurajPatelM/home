@@ -1,14 +1,3 @@
 import React from "react";
-
-const GetInTouch = ({ heading, message, email }) => {
-  return (
-    <>
-      <h2 id="contact" className="display-4 pb-3 text-center">{heading}</h2>
-      <p className="lead text-center pb-3">
-        {message}, <a className="text-decoration-none" href={`mailto:${email}`}>{email}</a>.
-      </p>
-    </>
-  );
-};
-
+const GetInTouch = ({heading,message,email}) => <div id="contact"><p className="eyebrow">Get in touch</p><h2>{heading}</h2><p>{message}</p><a className="contact-email" href={`mailto:${email}`}>{email} ↗</a></div>;
 export default GetInTouch;

@@ -1,89 +1,22 @@
-import React, { useState } from "react";
-import { useScrollPosition } from "../hooks/useScrollPosition";
-import useResizeObserver from "../hooks/useResizeObserver";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { getInTouch, mainBody, repos, about, skills, experiences, projectsData } from "../editable-stuff/config.js"; // Import experience section
-import { NavLink } from "./home/migration";
-
-const Navigation = React.forwardRef((props, ref) => {
-  const [isTop, setIsTop] = useState(true);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const navbarMenuRef = React.useRef();
-  const navbarDimensions = useResizeObserver(navbarMenuRef);
-  const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
-
-  useScrollPosition(
-    ({ prevPos, currPos }) => {
-      if (!navbarDimensions) return;
-      currPos.y + ref.current.offsetTop - navbarDimensions.bottom > 5
-        ? setIsTop(true)
-        : setIsTop(false);
-      setScrollPosition(currPos.y);
-    },
-    [navBottom]
-  );
-
-  React.useEffect(() => {
-    if (!navbarDimensions) return;
-    navBottom - scrollPosition >= ref.current.offsetTop
-      ? setIsTop(false)
-      : setIsTop(true);
-  }, [navBottom, navbarDimensions, ref, scrollPosition]);
-
+import { about } from "../editable-stuff/config";
+const Navigation = () => {
+  const [expanded, setExpanded] = React.useState(false);
   return (
-    <Navbar
-      ref={navbarMenuRef}
-      className={`px-3 fixed-top  ${!isTop ? "navbar-white" : "navbar-transparent"}`}
-      expand="lg"
-    >
-      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<${mainBody.firstName} />`}
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="navbar-nav mr-auto">
-
-          {/* About Section */}
-          {about.show && (
-            <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#aboutme"}>
-              About
-            </NavLink>
-          )}
-
-          {/* Resume Section */}
-          <NavLink className="nav-item lead" href={about.resume} target="_blank" rel="noreferrer noopener">
-            Resume
-          </NavLink>
-          {/* Experience Section */}
-          {experiences.show && (
-            <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#experiences"}>
-              Experience
-            </NavLink>
-          )}
-          {/* Projects Section */}
-          {projectsData.show && (
-            <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#projects"}>
-              Projects
-            </NavLink>
-          )}
-
-          {/* Skills Section */}
-          {skills.show && (
-            <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#skills"}>
-              Skills
-            </NavLink>
-          )}
-          {getInTouch.show && (
-            <NavLink className="nav-item lead" href={process.env.PUBLIC_URL + "/#contact"}>
-              Contact
-            </NavLink>
-          )}
-
+  <Navbar expanded={expanded} onToggle={setExpanded} collapseOnSelect expand="lg" className="portfolio-nav" sticky="top">
+    <div className="container">
+      <Navbar.Brand href="#home">Suraj Patel<span className="brand-dot">.</span></Navbar.Brand>
+      <Navbar.Toggle aria-controls="portfolio-navigation" aria-expanded={expanded} />
+      <Navbar.Collapse id="portfolio-navigation">
+        <Nav className="ms-auto">
+          {[['aboutme','About'],['experiences','Experience'],['projects','Projects'],['publications','Publications'],['contact','Contact']].map(([id,label]) => <Nav.Link key={id} href={`#${id}`}>{label}</Nav.Link>)}
+          <Nav.Link href={about.resume} target="_blank" rel="noopener noreferrer">Resume ↗</Nav.Link>
         </Nav>
       </Navbar.Collapse>
-    </Navbar>
-  );
-});
-
+    </div>
+  </Navbar>
+);
+};
 export default Navigation;
