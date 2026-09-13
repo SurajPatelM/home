@@ -2,7 +2,7 @@
 const navBar = { show: true };
 const mainBody = {
   firstName: "Suraj Patel", middleName: "", lastName: "Muthe Gowda",
-  message: "I turn AI research into systems people can use.",
+  message: "Building AI that understands language, interprets images, and solves real problems.",
   icons: [
     { label: "Google Scholar", url: "https://scholar.google.com/citations?user=LyL6qLIAAAAJ&hl=en" },
     { image: "fa-github", label: "GitHub", url: "https://github.com/SurajPatelM" },
@@ -12,7 +12,7 @@ const mainBody = {
 const about = {
   show: true, heading: "About",
   imageLink: require("./SurajPatelMutheGowda.jpg"), imageSize: 280,
-  message: "I’m a machine learning engineer and a master’s student in Computer Engineering at Northeastern University, graduating in December 2026. My work spans AI agent evaluation at Amazon, wearable health research at Apnimed, and on-device multimodal security at Samsung. I’m interested in building useful AI systems with careful evaluation, efficient inference, and clear human interaction.",
+  message: ["My work brings together machine learning, software engineering, and data analysis. At Amazon, I built tools to evaluate and optimize AI agents. At Apnimed, I developed deep learning pipelines for wearable health data. At Samsung, I worked on multimodal threat detection and efficient on-device inference.", "My strengths are turning complex data into useful models, evaluating what actually improves performance, and building the software around those models. My projects span language and vision models, conversational agents, streaming APIs, and statistical analysis.", "I’m currently pursuing a master’s in Computer Engineering at Northeastern University, focused on Machine Learning and Computer Vision, with graduation expected in December 2026. I’m exploring opportunities in machine learning, AI software engineering, NLP, computer vision, data science, and data analytics."],
   resume: require("./SurajPatelMutheGowda-Resume.pdf")
 };
 const projectsData = {
@@ -160,7 +160,7 @@ const skills = {
   "heading": "Skills",
   "groups": [
     {
-      "name": "Languages",
+      "name": "Programming and software",
       "items": [
         "Python",
         "C++",
@@ -168,7 +168,10 @@ const skills = {
         "SQL",
         "JavaScript",
         "TypeScript",
-        "Bash"
+        "Bash",
+        "Data structures and algorithms",
+        "Git",
+        "Linux / Unix"
       ]
     },
     {
@@ -177,61 +180,96 @@ const skills = {
         "PyTorch",
         "TensorFlow",
         "scikit-learn",
-        "Transformers",
         "CNNs",
-        "LSTMs",
-        "Computer vision",
-        "NLP",
-        "Multimodal learning"
+        "LSTMs / BiLSTMs",
+        "Time-series classification",
+        "Random Forest",
+        "SVM",
+        "Isolation Forest"
       ]
     },
     {
-      "name": "Generative AI",
+      "name": "NLP and generative AI",
       "items": [
+        "Transformers",
+        "BERT",
         "LLMs",
         "AI agents",
         "RAG",
         "LangChain",
         "Hugging Face",
         "Embeddings",
-        "Prompt engineering",
-        "Context engineering"
+        "Prompt / context engineering",
+        "Text classification"
       ]
     },
     {
-      "name": "Evaluation and MLOps",
+      "name": "Computer vision and multimodal AI",
       "items": [
+        "BLIP-2",
+        "Vision-language models",
+        "Image captioning",
+        "Video understanding",
+        "Temporal frame aggregation",
+        "OCR feature integration",
+        "Grad-CAM",
+        "Multimodal learning"
+      ]
+    },
+    {
+      "name": "Data science and analytics",
+      "items": [
+        "pandas",
+        "NumPy",
+        "Data preprocessing",
+        "Data quality filtering",
+        "Class-balanced sampling",
+        "Synthetic data generation",
+        "Anomaly detection",
+        "SARIMA forecasting",
+        "Matplotlib"
+      ]
+    },
+    {
+      "name": "Statistics and evaluation",
+      "items": [
+        "OLS regression",
+        "Wilcoxon tests",
+        "Bootstrap confidence intervals",
+        "Bonferroni correction",
+        "Ablation studies",
         "Model evaluation",
         "Agentic evaluation",
-        "MLflow",
-        "Distribution-shift detection",
-        "Statistical testing",
-        "CI/CD",
-        "Git"
+        "KL / JS divergence",
+        "Distribution-shift detection"
       ]
     },
     {
-      "name": "ML systems and applications",
+      "name": "ML systems and MLOps",
       "items": [
         "FastAPI",
         "REST APIs",
         "WebSockets",
-        "React",
+        "MLflow",
         "ONNX",
-        "Quantization",
-        "Streamlit"
+        "Post-training quantization",
+        "Mixed-precision training",
+        "CI/CD",
+        "Docker",
+        "Kubernetes"
       ]
     },
     {
-      "name": "Cloud and infrastructure",
+      "name": "Cloud and applications",
       "items": [
         "AWS ECS Fargate",
         "Amazon S3",
         "Amazon SQS",
         "Amazon EventBridge",
-        "Docker",
-        "Kubernetes",
-        "Linux / Unix"
+        "React",
+        "Next.js",
+        "Streamlit",
+        "API integration"
       ]
     }
   ]

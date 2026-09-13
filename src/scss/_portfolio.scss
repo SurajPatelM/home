@@ -120,3 +120,8 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.35rem); margin-bottom: 2rem; }
 }
 
 .logo-dark { background: #182a2b; padding: 13px; border-radius: 5px; }
+
+.about-section { align-items: start; }
+.about-copy .section-intro { font-size: 1rem; margin-bottom: 1.1rem; }
+.skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media(max-width: 767px) { .skills-grid { grid-template-columns: 1fr; } }
