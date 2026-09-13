@@ -6,7 +6,7 @@ const Project = ({heading,projectsData}) => (
       <article className="project-card" key={project.name}>
         <div className="project-meta"><span>{project.category}</span><span aria-hidden="true">{String(index+1).padStart(2,'0')}</span></div>
         <h3>{project.name}</h3><p>{project.summary}</p>
-        <ul>{project.description.map(point => <li key={point}>{point}</li>)}</ul>
+        <details className="project-details"><summary>What I worked on</summary><ul>{project.description.map(point => <li key={point}>{point}</li>)}</ul></details>
         <div className="technology-list">{project.technologies.map(tech => <span key={tech}>{tech}</span>)}</div>
         <a className="text-link project-link" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.name} on GitHub`}>View project ↗</a>
       </article>

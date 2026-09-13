@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.29c4c5eb.css",
-    "main.js": "/home/static/js/main.b1354869.js",
+    "main.css": "/home/static/css/main.e81e7dfa.css",
+    "main.js": "/home/static/js/main.dd263486.js",
     "static/js/453.9b1a9f3d.chunk.js": "/home/static/js/453.9b1a9f3d.chunk.js",
     "static/media/SurajPatelMutheGowda.jpg": "/home/static/media/SurajPatelMutheGowda.2eae279cef593f3c5d66.jpg",
     "static/media/SurajPatelMutheGowda-Resume.pdf": "/home/static/media/SurajPatelMutheGowda-Resume.44b5fdf80da10e2be523.pdf",
+    "static/media/samsung.jpg": "/home/static/media/samsung.f80819ecee5cecf3623a.jpg",
+    "static/media/northeastern.png": "/home/static/media/northeastern.545e126382a5fb24a5d0.png",
+    "static/media/amazon.svg": "/home/static/media/amazon.34a3153ee17948d67c5fe4006e81761c.svg",
     "index.html": "/home/index.html",
-    "main.29c4c5eb.css.map": "/home/static/css/main.29c4c5eb.css.map",
-    "main.b1354869.js.map": "/home/static/js/main.b1354869.js.map",
+    "main.e81e7dfa.css.map": "/home/static/css/main.e81e7dfa.css.map",
+    "main.dd263486.js.map": "/home/static/js/main.dd263486.js.map",
     "453.9b1a9f3d.chunk.js.map": "/home/static/js/453.9b1a9f3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29c4c5eb.css",
-    "static/js/main.b1354869.js"
+    "static/css/main.e81e7dfa.css",
+    "static/js/main.dd263486.js"
   ]
 }

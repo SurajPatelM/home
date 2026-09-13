@@ -34,3 +34,16 @@ npm start
 Build assets use the `/home/` base path for GitHub Pages. No publishing is performed by `npm run build`.
 
 The checked-in `docs/` directory is refreshed from the verified production build for repositories configured to publish GitHub Pages from that folder.
+
+## Google Scholar and organization logos
+
+All four publications were matched to the supplied Google Scholar profile on September 13, 2026: https://scholar.google.com/citations?user=LyL6qLIAAAAJ&hl=en. Added the FRUCT AIOps paper and expanded the ATS title. Citation counts are omitted to avoid stale metrics.
+
+Logos are bundled locally for reliable rendering:
+- Amazon: https://commons.wikimedia.org/wiki/File:Amazon_2024.svg
+- Apnimed: logo image extracted unchanged from the company presentation at https://apnimed.com/wp-content/uploads/2024/09/Apnimed-intro-Sept-2024_9.18.pdf
+- Samsung: existing repository asset.
+- Northeastern: https://www.northeastern.edu/wp-content/uploads/wordmark.png
+- PES: https://pes.edu/wp-content/uploads/2025/06/PESU-new-logo.png
+
+Expanded skills follow the supplied resume and the previously reviewed project repositories. The homepage offers a direct download of the supplied September 2026 resume; its PDF contents have not been rewritten.

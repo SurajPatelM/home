@@ -2,8 +2,9 @@
 const navBar = { show: true };
 const mainBody = {
   firstName: "Suraj Patel", middleName: "", lastName: "Muthe Gowda",
-  message: "I build AI systems that connect research with real-world use.",
+  message: "I turn AI research into systems people can use.",
   icons: [
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=LyL6qLIAAAAJ&hl=en" },
     { image: "fa-github", label: "GitHub", url: "https://github.com/SurajPatelM" },
     { image: "fa-linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/suraj-patel-m-9460b41b2" }
   ]
@@ -165,7 +166,8 @@ const skills = {
         "C++",
         "Java",
         "SQL",
-        "JavaScript / TypeScript",
+        "JavaScript",
+        "TypeScript",
         "Bash"
       ]
     },
@@ -175,6 +177,9 @@ const skills = {
         "PyTorch",
         "TensorFlow",
         "scikit-learn",
+        "Transformers",
+        "CNNs",
+        "LSTMs",
         "Computer vision",
         "NLP",
         "Multimodal learning"
@@ -188,20 +193,45 @@ const skills = {
         "RAG",
         "LangChain",
         "Hugging Face",
-        "Agentic evaluation"
+        "Embeddings",
+        "Prompt engineering",
+        "Context engineering"
       ]
     },
     {
-      "name": "Systems and infrastructure",
+      "name": "Evaluation and MLOps",
+      "items": [
+        "Model evaluation",
+        "Agentic evaluation",
+        "MLflow",
+        "Distribution-shift detection",
+        "Statistical testing",
+        "CI/CD",
+        "Git"
+      ]
+    },
+    {
+      "name": "ML systems and applications",
       "items": [
         "FastAPI",
-        "MLflow",
-        "AWS",
+        "REST APIs",
+        "WebSockets",
+        "React",
+        "ONNX",
+        "Quantization",
+        "Streamlit"
+      ]
+    },
+    {
+      "name": "Cloud and infrastructure",
+      "items": [
+        "AWS ECS Fargate",
+        "Amazon S3",
+        "Amazon SQS",
+        "Amazon EventBridge",
         "Docker",
         "Kubernetes",
-        "CI/CD",
-        "ONNX",
-        "Quantization"
+        "Linux / Unix"
       ]
     }
   ]
@@ -225,8 +255,9 @@ const education = [
   }
 ];
 const publications = [
+{"title": "Observability and AIOps in Cloud-Scale DevOps: Technologies, Architectures, Challenges, and Future Trends", "venue": "38th FRUCT Conference", "date": "2025", "url": "https://scholar.google.com/citations?view_op=view_citation&user=LyL6qLIAAAAJ&citation_for_view=LyL6qLIAAAAJ:2osOgNQ5qMEC"},
   {
-    "title": "Deep Learning Optimization of Sleep Stage Classification",
+    "title": "Deep Learning Optimization of Sleep Stage Classification Using Wearable-Derived SpO2, Pulse Rate, and Movement Features",
     "venue": "ATS 2026",
     "date": "May 2026",
     "url": "https://ats2026.d365.events/education/abstracts/abstracts/396c9803-32b6-4a2f-b760-44625bb95200"
@@ -244,6 +275,16 @@ const publications = [
     "url": "https://doi.org/10.1145/3636534.3690683"
   }
 ];
+const organizationLogos = {
+  Amazon: require("../assets/logos/amazon.svg").default,
+  Apnimed: require("../assets/logos/apnimed.png"),
+  "Samsung Research and Development Institute": require("../assets/logos/samsung.jpg"),
+  "Northeastern University": require("../assets/logos/northeastern.png"),
+  "PES University": require("../assets/logos/pes.png")
+};
+experiences.data.forEach(item => { item.logo = organizationLogos[item.company]; });
+education.forEach(item => { item.logo = organizationLogos[item.name]; });
+publications.sort((a, b) => Number(b.date.slice(-4)) - Number(a.date.slice(-4)));
 const getInTouch = {
   show: true, heading: "Let’s connect",
   message: "For conversations about machine learning, AI systems, research, or collaboration, get in touch.",
