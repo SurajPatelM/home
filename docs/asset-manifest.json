@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home/static/css/main.7404c095.css",
-    "main.js": "/home/static/js/main.672bc813.js",
+    "main.js": "/home/static/js/main.8128595a.js",
     "static/js/453.9b1a9f3d.chunk.js": "/home/static/js/453.9b1a9f3d.chunk.js",
     "static/media/SurajPatelMutheGowda.jpg": "/home/static/media/SurajPatelMutheGowda.2eae279cef593f3c5d66.jpg",
     "static/media/SurajPatelMutheGowda-Resume.pdf": "/home/static/media/SurajPatelMutheGowda-Resume.44b5fdf80da10e2be523.pdf",
@@ -10,11 +10,11 @@
     "static/media/amazon.svg": "/home/static/media/amazon.34a3153ee17948d67c5fe4006e81761c.svg",
     "index.html": "/home/index.html",
     "main.7404c095.css.map": "/home/static/css/main.7404c095.css.map",
-    "main.672bc813.js.map": "/home/static/js/main.672bc813.js.map",
+    "main.8128595a.js.map": "/home/static/js/main.8128595a.js.map",
     "453.9b1a9f3d.chunk.js.map": "/home/static/js/453.9b1a9f3d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7404c095.css",
-    "static/js/main.672bc813.js"
+    "static/js/main.8128595a.js"
   ]
 }

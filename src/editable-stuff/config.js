@@ -51,7 +51,7 @@ const projectsData = {
       "url": "https://github.com/SurajPatelM/video-commentary-ai"
     },
     {
-      "name": "Iikshana",
+      "name": "Real-Time Courtroom Language Accessibility System",
       "category": "Accessible AI",
       "summary": "A research prototype for real-time courtroom language accessibility with human oversight.",
       "description": [
