@@ -4,9 +4,9 @@ const mainBody = {
   firstName: "Suraj Patel", middleName: "", lastName: "Muthe Gowda",
   message: "Building intelligent solutions to transform the world through technology.",
   icons: [
-    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=LyL6qLIAAAAJ&hl=en" },
+    { image: "fa-linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/suraj-patel-m-9460b41b2" },
     { image: "fa-github", label: "GitHub", url: "https://github.com/SurajPatelM" },
-    { image: "fa-linkedin", label: "LinkedIn", url: "https://www.linkedin.com/in/suraj-patel-m-9460b41b2" }
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=LyL6qLIAAAAJ&hl=en" }
   ]
 };
 const about = {
