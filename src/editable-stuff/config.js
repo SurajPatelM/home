@@ -20,7 +20,7 @@ const projectsData = {
   "heading": "Selected projects",
   "data": [
     {
-      "name": "FinFluent",
+      "name": "FinFluent: Personal Financial Advisor",
       "category": "Multi-agent AI",
       "summary": "A personal finance assistant that brings budgeting, anomaly detection, stock sentiment, and portfolio analysis into one conversation.",
       "description": [
