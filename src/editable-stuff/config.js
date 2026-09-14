@@ -126,9 +126,10 @@ const experiences = {
       "date": "Jun 2026 - Aug 2026",
       "location": "Seattle, WA",
       "description": [
-        "Built an AWS service to analyze and optimize system prompts of more than 15,000 tokens across production AI agents.",
-        "Developed a statistical framework to measure prompt-section impact across seven quality dimensions.",
-        "Designed held-out validation that enabled up to 12% fewer prompt tokens with no significant response quality loss."
+        "Built an end-to-end platform to analyze and optimize system prompts of more than 15,000 tokens across production AI agents, integrating a Python analysis library, service layer, and React/TypeScript interface to automate controlled experiments.",
+        "Architected an asynchronous AWS workflow with ECS Fargate, SQS, EventBridge, and S3 to orchestrate long-running model evaluations, persist experiment artifacts, and decouple analysis from production service execution.",
+        "Developed a statistical decision framework using OLS regression, Wilcoxon tests, bootstrap confidence intervals, and Bonferroni correction to quantify prompt-section impact across seven independent quality dimensions.",
+        "Designed a held-out non-inferiority validation pipeline with section-level ablation-driven removal to account for interaction effects and prevent quality regressions, enabling up to 12% fewer prompt tokens across multiple production LLM applications without significant response quality loss."
       ]
     },
     {
@@ -137,9 +138,9 @@ const experiences = {
       "date": "Jul 2025 - Dec 2025",
       "location": "Cambridge, MA",
       "description": [
-        "Built a CNN-BiLSTM pipeline using more than 200,000 labeled wearable samples, improving four-class sleep-stage agreement from 0.60 to 0.80 Cohen’s kappa.",
-        "Engineered preprocessing, quality filtering, and balanced sampling pipelines, achieving 94.52% sensitivity in sleep/wake classification.",
-        "Added per-class evaluation, distribution-shift detection, and MLflow tracking."
+        "Built an automated pipeline to extract, preprocess, validate, and transform more than 200,000 labeled wearable samples across SpO2, pulse rate, and movement signals into model-ready training and evaluation datasets, with quality filtering and class-balanced sampling.",
+        "Developed a CNN-BiLSTM time-series classification pipeline over the curated datasets, improving four-class sleep-stage agreement from 0.60 to 0.80 Cohen’s kappa and achieving 94.52% sensitivity with a 5.48% false-negative rate in sleep/wake classification.",
+        "Designed a configurable evaluation and monitoring framework with reusable per-class metrics, KL/JS distribution-shift checks, and MLflow experiment tracking to compare datasets, models, and pipeline configurations; evaluation achieved 0.8132 AUROC and 62.37% wake specificity."
       ]
     },
     {
@@ -148,9 +149,9 @@ const experiences = {
       "date": "Jan 2022 - Aug 2024",
       "location": "Bengaluru, India",
       "description": [
-        "Developed multimodal vishing detection using call transcripts, OCR text, and sequential features, achieving 94.44% accuracy.",
-        "Optimized inference on Samsung S24 to 250 ms with 16-bit post-training quantization, reducing model size by 40% and runtime memory by 38%.",
-        "Developed a BERT-based threat classification pipeline with fine-tuning, evaluation, and production monitoring."
+        "Built and deployed a real-time multimodal vishing detection system combining call transcripts, OCR text, and sequential screen features with Transformer/ViViT encoders, achieving 94.44% accuracy in production for more than 100,000 users and a 16.48-point improvement over transcript-only detection.",
+        "Optimized the inference stack for on-device deployment on Samsung S24 using Samsung Neural SDK, achieving 250 ms latency while 16-bit post-training quantization reduced model size by 40% and runtime memory by 38%.",
+        "Developed and deployed an end-to-end NLP inference service for BERT-based threat classification on adversarial security datasets, integrating fine-tuning, model serving, evaluation, and production monitoring to improve detection accuracy by 20%."
       ]
     }
   ]

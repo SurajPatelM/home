@@ -49,3 +49,5 @@ Logos are bundled locally for reliable rendering:
 Expanded skills follow the supplied resume and the previously reviewed project repositories. The homepage offers a direct download of the supplied September 2026 resume; its PDF contents have not been rewritten.
 
 Profile positioning now distinguishes current graduate study from previous employment. Expanded statistics follow the Amazon resume entry; audio, vision, forecasting, and analytics skills follow the reviewed projects. Target roles follow the user’s stated job search. Removed the ambiguous experience eyebrow from the supplied screenshot.
+
+Experience descriptions combine the supplied September 2026 ML and Engineering resumes. Added Amazon platform/UI and asynchronous orchestration details; expanded Apnimed data validation and reusable evaluation; expanded Samsung deployment scale and NLP model serving. Metrics remain attributed to their original tasks.
