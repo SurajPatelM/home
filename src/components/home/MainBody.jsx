@@ -3,9 +3,10 @@ import { about } from "../../editable-stuff/config";
 const MainBody = React.forwardRef(({ title, message, icons }, ref) => (
   <section id="home" className="hero">
     <div className="container">
-      <p className="eyebrow">AI · Software engineering · Data</p>
+      <p className="eyebrow">Machine learning · NLP · AI software engineering</p>
       <h1 ref={ref}>{title}</h1>
       <p className="hero-message">{message}</p>
+      <p className="hero-focus">Focused on ML engineering, efficient inference, and data science.</p>
       <p className="hero-context">Master’s student at Northeastern · Graduating December 2026</p>
       <div className="hero-links">
         <a className="btn btn-dark" href="#projects">View projects <span aria-hidden="true">↗</span></a>

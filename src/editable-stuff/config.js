@@ -2,7 +2,7 @@
 const navBar = { show: true };
 const mainBody = {
   firstName: "Suraj Patel", middleName: "", lastName: "Muthe Gowda",
-  message: "Building AI that understands language, interprets images, and solves real problems.",
+  message: "Building intelligent solutions that turn advances in machine learning into real-world impact.",
   icons: [
     { label: "Google Scholar", url: "https://scholar.google.com/citations?user=LyL6qLIAAAAJ&hl=en" },
     { image: "fa-github", label: "GitHub", url: "https://github.com/SurajPatelM" },
@@ -160,29 +160,17 @@ const skills = {
   "heading": "Skills",
   "groups": [
     {
-      "name": "Programming and software",
-      "items": [
-        "Python",
-        "C++",
-        "Java",
-        "SQL",
-        "JavaScript",
-        "TypeScript",
-        "Bash",
-        "Data structures and algorithms",
-        "Git",
-        "Linux / Unix"
-      ]
-    },
-    {
       "name": "Machine learning",
-      "items": [
+      "summary": "Training and evaluating models for complex, real-world data.",
+      "featured": [
         "PyTorch",
         "TensorFlow",
         "scikit-learn",
+        "Time-series classification"
+      ],
+      "items": [
         "CNNs",
         "LSTMs / BiLSTMs",
-        "Time-series classification",
         "Random Forest",
         "SVM",
         "Isolation Forest"
@@ -190,12 +178,15 @@ const skills = {
     },
     {
       "name": "NLP and generative AI",
-      "items": [
+      "summary": "Building systems that understand language and support AI agents.",
+      "featured": [
         "Transformers",
         "BERT",
         "LLMs",
+        "RAG"
+      ],
+      "items": [
         "AI agents",
-        "RAG",
         "LangChain",
         "Hugging Face",
         "Embeddings",
@@ -204,55 +195,17 @@ const skills = {
       ]
     },
     {
-      "name": "Computer vision and multimodal AI",
-      "items": [
-        "BLIP-2",
-        "Vision-language models",
-        "Image captioning",
-        "Video understanding",
-        "Temporal frame aggregation",
-        "OCR feature integration",
-        "Grad-CAM",
-        "Multimodal learning"
-      ]
-    },
-    {
-      "name": "Data science and analytics",
-      "items": [
-        "pandas",
-        "NumPy",
-        "Data preprocessing",
-        "Data quality filtering",
-        "Class-balanced sampling",
-        "Synthetic data generation",
-        "Anomaly detection",
-        "SARIMA forecasting",
-        "Matplotlib"
-      ]
-    },
-    {
-      "name": "Statistics and evaluation",
-      "items": [
-        "OLS regression",
-        "Wilcoxon tests",
-        "Bootstrap confidence intervals",
-        "Bonferroni correction",
-        "Ablation studies",
-        "Model evaluation",
-        "Agentic evaluation",
-        "KL / JS divergence",
-        "Distribution-shift detection"
-      ]
-    },
-    {
-      "name": "ML systems and MLOps",
-      "items": [
-        "FastAPI",
-        "REST APIs",
-        "WebSockets",
-        "MLflow",
+      "name": "ML inference and MLOps",
+      "summary": "Optimizing models and delivering reliable inference services.",
+      "featured": [
         "ONNX",
         "Post-training quantization",
+        "FastAPI",
+        "MLflow"
+      ],
+      "items": [
+        "REST APIs",
+        "WebSockets",
         "Mixed-precision training",
         "CI/CD",
         "Docker",
@@ -260,9 +213,22 @@ const skills = {
       ]
     },
     {
-      "name": "Cloud and applications",
+      "name": "Software engineering for AI",
+      "summary": "Building APIs, applications, and cloud services around AI models.",
+      "featured": [
+        "Python",
+        "C++",
+        "SQL",
+        "AWS ECS Fargate"
+      ],
       "items": [
-        "AWS ECS Fargate",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "Bash",
+        "Data structures and algorithms",
+        "Git",
+        "Linux / Unix",
         "Amazon S3",
         "Amazon SQS",
         "Amazon EventBridge",
@@ -270,6 +236,49 @@ const skills = {
         "Next.js",
         "Streamlit",
         "API integration"
+      ]
+    },
+    {
+      "name": "Data science and evaluation",
+      "summary": "Preparing data, testing hypotheses, and measuring model impact.",
+      "featured": [
+        "pandas",
+        "NumPy",
+        "Model evaluation",
+        "Statistical testing"
+      ],
+      "items": [
+        "Data preprocessing",
+        "Data quality filtering",
+        "Class-balanced sampling",
+        "Synthetic data generation",
+        "Anomaly detection",
+        "SARIMA forecasting",
+        "Matplotlib",
+        "OLS regression",
+        "Wilcoxon tests",
+        "Bootstrap confidence intervals",
+        "Bonferroni correction",
+        "Ablation studies",
+        "Agentic evaluation",
+        "KL / JS divergence",
+        "Distribution-shift detection"
+      ]
+    },
+    {
+      "name": "Computer vision and multimodal AI",
+      "summary": "Combining visual and language signals for richer understanding.",
+      "featured": [
+        "BLIP-2",
+        "Vision-language models",
+        "Video understanding",
+        "Multimodal learning"
+      ],
+      "items": [
+        "Image captioning",
+        "Temporal frame aggregation",
+        "OCR feature integration",
+        "Grad-CAM"
       ]
     }
   ]
