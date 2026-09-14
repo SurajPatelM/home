@@ -2,7 +2,7 @@
 const navBar = { show: true };
 const mainBody = {
   firstName: "Suraj Patel", middleName: "", lastName: "Muthe Gowda",
-  message: "Building intelligent solutions that turn advances in machine learning into real-world impact.",
+  message: "Building intelligent solutions to transform the world through technology.",
   icons: [
     { label: "Google Scholar", url: "https://scholar.google.com/citations?user=LyL6qLIAAAAJ&hl=en" },
     { image: "fa-github", label: "GitHub", url: "https://github.com/SurajPatelM" },

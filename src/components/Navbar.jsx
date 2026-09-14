@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
+import ThemeToggle from "./ThemeToggle";
 import Nav from "react-bootstrap/Nav";
 import { about } from "../editable-stuff/config";
 const Navigation = () => {
@@ -8,7 +9,7 @@ const Navigation = () => {
   <Navbar expanded={expanded} onToggle={setExpanded} collapseOnSelect expand="lg" className="portfolio-nav" sticky="top">
     <div className="container">
       <Navbar.Brand href="#home">Suraj Patel<span className="brand-dot">.</span></Navbar.Brand>
-      <Navbar.Toggle aria-controls="portfolio-navigation" aria-expanded={expanded} />
+      <div className="nav-controls"><ThemeToggle /><Navbar.Toggle aria-controls="portfolio-navigation" aria-expanded={expanded} /></div>
       <Navbar.Collapse id="portfolio-navigation">
         <Nav className="ms-auto">
           {[['aboutme','About'],['experiences','Experience'],['projects','Projects'],['publications','Publications'],['skills','Skills'],['contact','Contact']].map(([id,label]) => <Nav.Link key={id} href={`#${id}`}>{label}</Nav.Link>)}

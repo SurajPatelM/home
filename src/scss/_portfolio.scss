@@ -139,3 +139,31 @@ h2 { font-size: clamp(1.8rem, 3vw, 2.35rem); margin-bottom: 2rem; }
 .skill-count { color: $muted; }
 .skill-methods { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 25px; margin-top: 1rem; font-size: .83rem; }
 @media(max-width: 480px) { .skill-area { padding: 20px; } .skill-methods { grid-template-columns: 1fr; } }
+
+.nav-controls { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.theme-toggle { display: inline-flex; align-items: center; gap: 7px; border: 1px solid #c7d4cc; background: transparent; color: #234b40; border-radius: 6px; padding: 6px 10px; font-size: .85rem; }
+.theme-toggle span:first-child { font-size: 1.15rem; line-height: 1; }
+@media(min-width: 992px) { .nav-controls { order: 3; margin-left: 18px; } }
+html[data-theme="dark"] {
+  body { background: #111918; color: #e7eeea; }
+  a { color: #9ad9c3; }
+  a:hover { color: #c4f2df; }
+  .portfolio-nav, .portfolio-nav .navbar-collapse { background: #151f1d; border-color: #34443e; }
+  .navbar-brand, .portfolio-nav .nav-link { color: #e7eeea; }
+  .brand-dot, .eyebrow, .entry-date, .education-gpa, .project-meta { color: #9ad9c3; }
+  .hero, .project-section, .portfolio-footer { background: #17221f; border-color: #34443e; }
+  .muted, .section-intro, .hero-context, .hero-focus, ul, .project-card p, .skill-summary, .skills-intro, .skill-count, .footer-credit { color: #b8c9c0; }
+  .project-card, .skill-area { background: #1c2925; border-color: #3a4c43; }
+  .experience-entry, .education-grid article, .publication-entry, .footer-credit { border-color: #34443e; }
+  .publication-entry a { color: #e7eeea; }
+  .technology-list span, .skill-highlights li { background: #2b4036; color: #c4ebd8; }
+  .project-details summary, .skill-details summary { color: #9ad9c3; }
+  .btn-dark { background: #b4e3cd; border-color: #b4e3cd; color: #15251c; }
+  .btn-dark:hover { background: #cef0df; color: #15251c; }
+  .btn-outline-dark, .theme-toggle { color: #d2eadc; border-color: #738e7e; }
+  .btn-outline-dark:hover, .theme-toggle:hover { background: #2b4036; color: #fff; }
+  .navbar-toggler { border-color: #738e7e; }
+  .navbar-toggler-icon { filter: invert(1); }
+  .organization-logo:not(.logo-dark) { background: #fff; padding: 10px; border-radius: 5px; }
+  .skip-link { background: #17221f; color: #c4f2df; }
+}

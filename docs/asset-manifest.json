@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.9828e923.css",
-    "main.js": "/home/static/js/main.0006d9f1.js",
+    "main.css": "/home/static/css/main.5c1add5c.css",
+    "main.js": "/home/static/js/main.0700be72.js",
     "static/js/453.9b1a9f3d.chunk.js": "/home/static/js/453.9b1a9f3d.chunk.js",
     "static/media/SurajPatelMutheGowda.jpg": "/home/static/media/SurajPatelMutheGowda.2eae279cef593f3c5d66.jpg",
     "static/media/SurajPatelMutheGowda-Resume.pdf": "/home/static/media/SurajPatelMutheGowda-Resume.44b5fdf80da10e2be523.pdf",
@@ -9,12 +9,12 @@
     "static/media/northeastern.png": "/home/static/media/northeastern.545e126382a5fb24a5d0.png",
     "static/media/amazon.svg": "/home/static/media/amazon.34a3153ee17948d67c5fe4006e81761c.svg",
     "index.html": "/home/index.html",
-    "main.9828e923.css.map": "/home/static/css/main.9828e923.css.map",
-    "main.0006d9f1.js.map": "/home/static/js/main.0006d9f1.js.map",
+    "main.5c1add5c.css.map": "/home/static/css/main.5c1add5c.css.map",
+    "main.0700be72.js.map": "/home/static/js/main.0700be72.js.map",
     "453.9b1a9f3d.chunk.js.map": "/home/static/js/453.9b1a9f3d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9828e923.css",
-    "static/js/main.0006d9f1.js"
+    "static/css/main.5c1add5c.css",
+    "static/js/main.0700be72.js"
   ]
 }
